@@ -1,0 +1,56 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Princeton算法课程特定文件 ###
+# 编译的.class文件
+*.class
+
+# 作业提交的zip文件（保留原始zip作为备份）
+# *.zip
+
+# 临时文件
+*.tmp
+*.temp
+
+# 日志文件
+*.log
+
+# Princeton库的本地缓存（如果有的话）
+algs4-data/
+
+# 测试输出文件
+test-output/
+output.txt

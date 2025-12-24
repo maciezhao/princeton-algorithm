@@ -24,16 +24,22 @@ public class FastCollinearPoints {
 
         Point[] sortedPoints = points.clone();
         Arrays.sort(sortedPoints);
+        for (int i = 0; i < sortedPoints.length - 1; i++) {
+            if (sortedPoints[i].compareTo(sortedPoints[i + 1]) == 0) {
+                throw new IllegalArgumentException("Duplicate points");
+            }
+        }
+
         List<LineSegment> segmentList = new ArrayList<>();
 
         for (Point p : sortedPoints) {
             Point[] otherPoints = sortedPoints.clone();
             Arrays.sort(otherPoints, p.slopeOrder());
             int j = 1;
-            while (j < sortedPoints.length) {
+            while (j < otherPoints.length) {
                 List<Point> collinearPoints = new ArrayList<>();
                 double slope = p.slopeTo(otherPoints[j]);
-                while (j < sortedPoints.length && p.slopeTo(otherPoints[j]) == slope) {
+                while (j < otherPoints.length && p.slopeTo(otherPoints[j]) == slope) {
                     collinearPoints.add(otherPoints[j]);
                     j++;
                 }

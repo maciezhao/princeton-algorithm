@@ -13,7 +13,7 @@
 - **课程**: Algorithms Part I (Coursera - Princeton University)
 - **学习模式**: 每天1小时，工作日晚上学习
 - **当前进度**: Week 6 Collinear Points作业（Day 1/4完成）
-- **总体进度**: 约30% (5/18周 + 额外作业)
+- **总体进度**: 约30% (5/18周 + 额外 作业)
 
 ### 学习资源位置
 ```
